@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4u7-mM-utK">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Category-->
+        <scene sceneID="cJY-dZ-2ip">
+            <objects>
+                <viewController storyboardIdentifier="CategoryViewController" id="4u7-mM-utK" customClass="CategoryViewController" customModule="CoffeeHouse" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jhI-Lu-Nmd">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GcN-0t-9p0">
+                                <rect key="frame" x="16" y="75" width="361" height="122.66666666666669"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="50"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="One">
+                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="myButtonsnavigation:" destination="4u7-mM-utK" eventType="touchUpInside" id="cB4-FZ-zxZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfr-3k-lYn">
+                                <rect key="frame" x="16" y="213.66666666666663" width="361" height="123"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="50"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Two">
+                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="myButtonsnavigation:" destination="4u7-mM-utK" eventType="touchUpInside" id="5Mv-Pt-7ox"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvq-kU-ccs">
+                                <rect key="frame" x="16" y="352.66666666666669" width="361" height="122.66666666666669"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="50"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Three">
+                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="myButtonsnavigation:" destination="4u7-mM-utK" eventType="touchUpInside" id="WeY-6f-XwX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kr6-lR-X1k">
+                                <rect key="frame" x="16" y="491.33333333333326" width="361" height="123"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="50"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Four">
+                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="myButtonsnavigation:" destination="4u7-mM-utK" eventType="touchUpInside" id="e5H-62-dau"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ytY-0J-omQ">
+                                <rect key="frame" x="16" y="630.33333333333337" width="361" height="122.66666666666663"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="50"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Five">
+                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="myButtonsnavigation:" destination="4u7-mM-utK" eventType="touchUpInside" id="3ZQ-Tj-jJr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uwI-1J-RpK"/>
+                        <color key="backgroundColor" name="CoffeeHouseGray"/>
+                        <constraints>
+                            <constraint firstItem="ytY-0J-omQ" firstAttribute="width" secondItem="kr6-lR-X1k" secondAttribute="width" id="1im-y4-3Pv"/>
+                            <constraint firstItem="qvq-kU-ccs" firstAttribute="top" secondItem="nfr-3k-lYn" secondAttribute="bottom" constant="16" id="9KY-vU-mXI"/>
+                            <constraint firstItem="GcN-0t-9p0" firstAttribute="top" secondItem="uwI-1J-RpK" secondAttribute="top" constant="16" id="A7O-LX-FZe"/>
+                            <constraint firstItem="nfr-3k-lYn" firstAttribute="height" secondItem="GcN-0t-9p0" secondAttribute="height" id="AFy-rg-ezU"/>
+                            <constraint firstItem="uwI-1J-RpK" firstAttribute="trailing" secondItem="qvq-kU-ccs" secondAttribute="trailing" constant="16" id="CRm-bx-6vP"/>
+                            <constraint firstItem="nfr-3k-lYn" firstAttribute="leading" secondItem="uwI-1J-RpK" secondAttribute="leading" constant="16" id="DC8-eF-AoE"/>
+                            <constraint firstItem="nfr-3k-lYn" firstAttribute="top" secondItem="GcN-0t-9p0" secondAttribute="bottom" constant="16" id="Dds-LX-QUf"/>
+                            <constraint firstItem="kr6-lR-X1k" firstAttribute="height" secondItem="qvq-kU-ccs" secondAttribute="height" id="FTZ-r0-RA7"/>
+                            <constraint firstItem="nfr-3k-lYn" firstAttribute="top" secondItem="GcN-0t-9p0" secondAttribute="bottom" constant="16" id="HLH-Ok-IPF"/>
+                            <constraint firstItem="ytY-0J-omQ" firstAttribute="height" secondItem="kr6-lR-X1k" secondAttribute="height" id="HaU-9u-MTf"/>
+                            <constraint firstItem="uwI-1J-RpK" firstAttribute="bottom" secondItem="ytY-0J-omQ" secondAttribute="bottom" constant="16" id="J4Y-3Q-YHp"/>
+                            <constraint firstItem="ytY-0J-omQ" firstAttribute="top" secondItem="kr6-lR-X1k" secondAttribute="bottom" constant="16" id="L9b-M1-GyS"/>
+                            <constraint firstItem="kr6-lR-X1k" firstAttribute="top" secondItem="qvq-kU-ccs" secondAttribute="bottom" constant="16" id="LZD-4I-o3i"/>
+                            <constraint firstItem="uwI-1J-RpK" firstAttribute="trailing" secondItem="nfr-3k-lYn" secondAttribute="trailing" constant="16" id="MME-zM-vVG"/>
+                            <constraint firstItem="ytY-0J-omQ" firstAttribute="leading" secondItem="uwI-1J-RpK" secondAttribute="leading" constant="16" id="O5t-mk-eLS"/>
+                            <constraint firstItem="nfr-3k-lYn" firstAttribute="width" secondItem="GcN-0t-9p0" secondAttribute="width" id="UoT-Zf-hjT"/>
+                            <constraint firstItem="qvq-kU-ccs" firstAttribute="height" secondItem="nfr-3k-lYn" secondAttribute="height" id="WDI-LN-xlA"/>
+                            <constraint firstItem="qvq-kU-ccs" firstAttribute="top" secondItem="nfr-3k-lYn" secondAttribute="bottom" constant="16" id="Z7W-hn-YcL"/>
+                            <constraint firstItem="kr6-lR-X1k" firstAttribute="width" secondItem="qvq-kU-ccs" secondAttribute="width" id="ZWz-vV-2Nf"/>
+                            <constraint firstItem="kr6-lR-X1k" firstAttribute="top" secondItem="qvq-kU-ccs" secondAttribute="bottom" constant="16" id="b9j-gz-MlW"/>
+                            <constraint firstItem="qvq-kU-ccs" firstAttribute="leading" secondItem="uwI-1J-RpK" secondAttribute="leading" constant="16" id="bGV-Oi-7nJ"/>
+                            <constraint firstItem="qvq-kU-ccs" firstAttribute="width" secondItem="nfr-3k-lYn" secondAttribute="width" id="fyq-D4-qVc"/>
+                            <constraint firstItem="uwI-1J-RpK" firstAttribute="trailing" secondItem="kr6-lR-X1k" secondAttribute="trailing" constant="16" id="kCO-Nx-fAR"/>
+                            <constraint firstItem="GcN-0t-9p0" firstAttribute="leading" secondItem="uwI-1J-RpK" secondAttribute="leading" constant="16" id="l23-Zz-hxs"/>
+                            <constraint firstItem="uwI-1J-RpK" firstAttribute="trailing" secondItem="GcN-0t-9p0" secondAttribute="trailing" constant="16" id="q1j-Dc-dKH"/>
+                            <constraint firstItem="uwI-1J-RpK" firstAttribute="trailing" secondItem="ytY-0J-omQ" secondAttribute="trailing" constant="16" id="uFs-xb-Nhx"/>
+                            <constraint firstItem="kr6-lR-X1k" firstAttribute="leading" secondItem="uwI-1J-RpK" secondAttribute="leading" constant="16" id="wSV-MW-X2q"/>
+                            <constraint firstItem="ytY-0J-omQ" firstAttribute="top" secondItem="kr6-lR-X1k" secondAttribute="bottom" constant="16" id="xQF-K5-b70"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Category" image="book" catalog="system" id="7E9-8C-NaJ"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="fiveBtn" destination="ytY-0J-omQ" id="lIw-5W-7X5"/>
+                        <outlet property="fourBtn" destination="kr6-lR-X1k" id="fry-3w-P2K"/>
+                        <outlet property="oneBtn" destination="GcN-0t-9p0" id="Hya-qf-w4P"/>
+                        <outlet property="threeBtn" destination="qvq-kU-ccs" id="eaF-QG-LWo"/>
+                        <outlet property="twoBtn" destination="nfr-3k-lYn" id="RVx-PR-XsN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ybY-91-url" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="301.52671755725191" y="-415.49295774647891"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="book" catalog="system" width="128" height="99"/>
+        <namedColor name="CoffeeHouseGray">
+            <color red="0.11372549019607843" green="0.11372549019607843" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

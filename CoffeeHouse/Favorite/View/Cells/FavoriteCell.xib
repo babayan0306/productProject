@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="FavoriteCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="115" id="qGE-ov-feP" customClass="FavoriteCell" customModule="CoffeeHouse" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="306" height="115"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qGE-ov-feP" id="IA3-Fz-tVH">
+                <rect key="frame" x="0.0" y="0.0" width="306" height="115"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Cn-v1-CLc">
+                        <rect key="frame" x="8" y="13" width="97" height="89"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="89" id="Cu3-o9-4Z9"/>
+                            <constraint firstAttribute="width" constant="97" id="Olx-bw-9cT"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iLJ-ku-liq">
+                        <rect key="frame" x="133" y="49" width="147" height="26"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uR1-fH-4X7">
+                        <rect key="frame" x="133" y="79" width="145" height="26"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tho-EQ-UiZ">
+                        <rect key="frame" x="244" y="10" width="48" height="38"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="on-coffee" title=""/>
+                        <connections>
+                            <action selector="coffeeButton:" destination="qGE-ov-feP" eventType="touchUpInside" id="pMS-Dk-JFF"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="1Cn-v1-CLc" firstAttribute="leading" secondItem="IA3-Fz-tVH" secondAttribute="leading" constant="8" id="0sr-kg-f1b"/>
+                    <constraint firstItem="uR1-fH-4X7" firstAttribute="leading" secondItem="1Cn-v1-CLc" secondAttribute="trailing" constant="28" id="5K5-V2-MA0"/>
+                    <constraint firstAttribute="trailing" secondItem="uR1-fH-4X7" secondAttribute="trailing" constant="28" id="94g-0D-en5"/>
+                    <constraint firstItem="Tho-EQ-UiZ" firstAttribute="top" secondItem="IA3-Fz-tVH" secondAttribute="top" constant="10" id="Pi5-GH-c1c"/>
+                    <constraint firstAttribute="bottom" secondItem="uR1-fH-4X7" secondAttribute="bottom" constant="10" id="UT7-CQ-JSz"/>
+                    <constraint firstAttribute="bottom" secondItem="1Cn-v1-CLc" secondAttribute="bottom" constant="13" id="UZ9-3a-QFQ"/>
+                    <constraint firstAttribute="trailing" secondItem="Tho-EQ-UiZ" secondAttribute="trailing" constant="14" id="WqA-PX-OYi"/>
+                    <constraint firstItem="uR1-fH-4X7" firstAttribute="top" secondItem="iLJ-ku-liq" secondAttribute="bottom" constant="4" id="eUI-aF-Y2B"/>
+                    <constraint firstItem="1Cn-v1-CLc" firstAttribute="top" secondItem="IA3-Fz-tVH" secondAttribute="top" constant="13" id="lBI-cx-8Ng"/>
+                    <constraint firstItem="iLJ-ku-liq" firstAttribute="leading" secondItem="1Cn-v1-CLc" secondAttribute="trailing" constant="28" id="vOl-SE-hDH"/>
+                    <constraint firstAttribute="trailing" secondItem="iLJ-ku-liq" secondAttribute="trailing" constant="26" id="yUt-Ih-7rY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="favCoffeeButton" destination="Tho-EQ-UiZ" id="VIh-Qm-KZY"/>
+                <outlet property="favCoffeeImage" destination="1Cn-v1-CLc" id="Ske-AI-aUX"/>
+                <outlet property="favCoffeePrice" destination="uR1-fH-4X7" id="vdw-kj-gXq"/>
+                <outlet property="favCoffeeTitle" destination="iLJ-ku-liq" id="yKU-K8-4iQ"/>
+            </connections>
+            <point key="canvasLocation" x="-482.44274809160305" y="-9.5070422535211279"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="on-coffee" width="24" height="24"/>
+    </resources>
+</document>

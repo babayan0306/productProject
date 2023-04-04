@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="AllDinksCell" reuseIdentifier="" id="gmi-tL-m9R" customClass="AllDinksCell" customModule="CoffeeHouse" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="143"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="fT2-6c-ccB" customClass="AllDinksCell" customModule="CoffeeHouse" customModuleProvider="target">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="143"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D3z-Zb-nFl">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="143"/>
+                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gg8-bw-Iwn">
+                        <rect key="frame" x="16" y="88" width="118" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8U-mp-mgJ">
+                        <rect key="frame" x="16" y="114" width="118" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N5P-9J-xFT">
+                        <rect key="frame" x="5" y="5" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="9Wv-uu-G7j"/>
+                            <constraint firstAttribute="width" constant="45" id="jYX-vl-L7i"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="" image="off-coffee">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="favCoffeButton:" destination="gmi-tL-m9R" eventType="touchUpInside" id="MYd-07-PHK"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="f8U-mp-mgJ" firstAttribute="top" secondItem="Gg8-bw-Iwn" secondAttribute="bottom" constant="5" id="2KS-L5-Xts"/>
+                    <constraint firstItem="Gg8-bw-Iwn" firstAttribute="leading" secondItem="fT2-6c-ccB" secondAttribute="leading" constant="16" id="EBV-46-qeH"/>
+                    <constraint firstAttribute="trailing" secondItem="D3z-Zb-nFl" secondAttribute="trailing" id="EuM-Mi-Ne4"/>
+                    <constraint firstItem="D3z-Zb-nFl" firstAttribute="leading" secondItem="fT2-6c-ccB" secondAttribute="leading" id="JRt-2k-bzn"/>
+                    <constraint firstItem="f8U-mp-mgJ" firstAttribute="leading" secondItem="fT2-6c-ccB" secondAttribute="leading" constant="16" id="Ng2-Z8-jNs"/>
+                    <constraint firstItem="N5P-9J-xFT" firstAttribute="leading" secondItem="fT2-6c-ccB" secondAttribute="leading" constant="5" id="ffb-nx-E90"/>
+                    <constraint firstItem="N5P-9J-xFT" firstAttribute="top" secondItem="fT2-6c-ccB" secondAttribute="top" constant="5" id="gbm-nX-Lz4"/>
+                    <constraint firstAttribute="trailing" secondItem="f8U-mp-mgJ" secondAttribute="trailing" constant="16" id="hJh-2b-13b"/>
+                    <constraint firstAttribute="bottom" secondItem="f8U-mp-mgJ" secondAttribute="bottom" constant="8" id="ilv-ZR-ZVt"/>
+                    <constraint firstItem="D3z-Zb-nFl" firstAttribute="top" secondItem="fT2-6c-ccB" secondAttribute="top" id="kI4-bc-vDH"/>
+                    <constraint firstAttribute="trailing" secondItem="Gg8-bw-Iwn" secondAttribute="trailing" constant="16" id="tph-Xc-XYf"/>
+                    <constraint firstAttribute="bottom" secondItem="D3z-Zb-nFl" secondAttribute="bottom" id="ucK-dr-i6d"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="150" height="143"/>
+            <connections>
+                <outlet property="coffeHeart" destination="N5P-9J-xFT" id="R6S-uZ-Qda"/>
+                <outlet property="coffeeImage" destination="D3z-Zb-nFl" id="fhO-PE-mHZ"/>
+                <outlet property="coffeePrice" destination="f8U-mp-mgJ" id="L2t-3T-93P"/>
+                <outlet property="coffeeTitle" destination="Gg8-bw-Iwn" id="tR7-9H-cDd"/>
+            </connections>
+            <point key="canvasLocation" x="-235.11450381679387" y="-29.225352112676056"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="off-coffee" width="24" height="24"/>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
